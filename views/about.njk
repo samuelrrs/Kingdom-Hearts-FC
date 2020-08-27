@@ -1,0 +1,50 @@
+{%extends "layout.njk"%}
+
+{% block head%}
+    <title>Sobre - Samuel Ribeiro</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    {%endblock%}
+
+    {% block content%}
+
+        <div id="wrapper">
+            {#   <img src="{{about.avatar_url}}" alt="Samuel Ribeiro"> #}
+            <h1>{{about.name}}</h1>
+            <p>{{about.role}}</p>
+            <a href=""></a>
+        </div>
+
+        <section class="sectionnew">
+
+            <div class="news">
+
+                <img src="https://www.futurebehind.com/wp-content/uploads/2019/11/kingdom-hearts.jpg" alt="NEW">
+
+                <h1>DISPONIVEL HOJE</h1>
+
+
+            
+                <h6>Samuel e Juliana</h6>
+
+                <img src="https://www.kingdomhearts.com/img/kh_eu_accolades.png" alt="NOTA">
+
+                <div class="description">
+                    <p>Em um mundo onde Luz e Trevas estão em constante conflito, um grupo maligno chamado Organization XVIII tem como objetivo abrir o Reino dos Coração, ou Kingdom Hearts, para fazer com que tudo seja consumido pelas sombras e não haja mais luz para afastá-las. O protagonista, Sora, empunhado de sua Keyblade - uma espada em formato de chave com poderes mágicos, precisa impedir que o principal inimigo, Mestre Xehanort, use a organização para começar uma guerra entre usuários da arma especial e obtenha a χ-blade (pronuncia-se Keyblade), que abre o portal para Kingdom Hearts.</p>
+                    <p></p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div id="links-footer" class="links">
+            {%for link in about.links%}
+
+                <span class="material-icons">videogame_asset</span>
+                {%endfor%}
+                <span class="material-icons">videogame_asset</span>
+
+            </div>
+
+        {% endblock %}
